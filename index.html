@@ -8,6 +8,10 @@
 <link rel="stylesheet" href="css/font_color.css">
 <link rel="stylesheet" href="css/theme.css">
 
+
+<link href="http://hayageek.github.io/jQuery-Upload-File/4.0.11/uploadfile.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://hayageek.github.io/jQuery-Upload-File/4.0.11/jquery.uploadfile.min.js"></script>
 	</head>
 
 	<body>
@@ -22,6 +26,12 @@
 <br>
 <br>
 <br>
+<p id="title"> Auto code in RobotC </p>
+<a href="projects/line.c" download> Download</a>
+<br>
+<br>
+<br>
+
 <h3> ICS4U0 </h3>
 <a href="sub/thisisfine.html"> <img src="img/ori.jpg"> </a>
 
@@ -92,12 +102,27 @@
 
 <br><br><br><br><br>
 
+<div id="fileuploader">Upload</div>
+
+<br><br>
+
+<script>
+$(document).ready(function()
+{
+	$("#fileuploader").uploadFile({
+	url:"YOUR_FILE_UPLOAD_URL",
+	fileName:"myfile"
+	});
+});
+</script>
+
+<br><br><br><br><br>
+
 <h5> <a href=""> About me </a> 
 	 <a href=""> Contact me </a>
 	 <a href=""> Feed back </a>
 <br>
 <h6> Fred Wang projects 2018 not copy righted but don't steal my work thanks </h6>
-	
 	</body>
 	
 </html>
